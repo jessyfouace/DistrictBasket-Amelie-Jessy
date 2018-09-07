@@ -96,10 +96,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+/* *************************
+*****************************
+****** HEADER + NAVBAR ******
+*****************************
+************************* */
 
+.bgdark{
+  background-color: #39363d;
+}
 
+.colororangelist{
+  color: white;
+}
 
+.colororangelist:hover{
+  text-decoration: none;
+  color: #ff5400;
+}
 
+.colororange{
+  color: #ff5400;
+}
+
+img[src="img/logobasket2.png"]{
+  width: 70%;
+}
+
+.footer{
+  bottom: 0;
+}
+
+.fa-facebook{
+  color: #3b5998;
+}
+
+.fa-twitter-square{
+  color: #1da1f2;
+}
+
+@media screen and (min-width: 768px) {
+  #navbarNavAltMarkup{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .d-nonenav{
+    display: none !important;
+  }
+}
 
 
 
