@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light bgdark justify-content-between position-fixed w-100">
-  <a class="navbar-brand" href="#"><img src="img/logobasket2.png" alt="Logo de mon entreprise"></a>
+  <a class="navbar-brand" href="index.php"><img src="img/logobasket2.png" alt="Logo de mon entreprise"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -19,6 +19,44 @@
   ?>
 
   <?php
+  $produitone = array(
+    'imgsrc' => "img/logobasket.png",
+    'nom' => "Basket1",
+    'desc' => "desc basket1",
+    'prix' => "20€",
+    'taille' => "40" + "41" + "42",
+    'color' => "blue" + "red" + "black");
+
+  $produittwo = array(
+    'imgsrc' => "img/logobasket.png",
+    'nom' => "Basket2",
+    'desc' => "desc basket2",
+    'prix' => "20€",
+    'taille' => "40" + "41" + "42",
+    'color' => "blue" + "red" + "black");
+
+  $produittree = array(
+    'imgsrc' => "img/logobasket.png",
+    'nom' => "Basket3",
+    'desc' => "desc basket3",
+    'prix' => "20€",
+    'taille' => "40" + "41" + "42",
+    'color' => "blue" + "red" + "black");
+
+  $produitfor = array(
+    'imgsrc' => "img/logobasket.png",
+    'nom' => "Basket4",
+    'desc' => "desc basket4",
+    'prix' => "20€",
+    'taille' => "40" + "41" + "42",
+    'color' => "blue" + "red" + "black");
+  ?>
+
+  <a class="mt-5" href="detail.php?product=<?php echo $produitone ?>">
+    <img class="mt-5 pt-5" alt="Photo basket" src="img/logobasket.png">
+  </a>
+
+  <?php
   include("footer.php");
   ?>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

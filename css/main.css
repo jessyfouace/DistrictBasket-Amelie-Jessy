@@ -102,9 +102,9 @@ textarea {
 ****** HEADER + NAVBAR ******
 *****************************
 ************************* */
-
 .bgdark{
   background-color: #39363d;
+  z-index: 5;
 }
 
 .colororangelist{
@@ -125,8 +125,10 @@ img[src="img/logobasket2.png"]{
 }
 
 .footer{
+  position: absolute;
   bottom: 0;
 }
+
 
 @media screen and (min-width: 768px) {
   #navbarNavAltMarkup{
@@ -141,8 +143,23 @@ img[src="img/logobasket2.png"]{
 }
 
 
+/*******************
+********************
+***** DETAIL *******
+********************
+*******************/
 
+.containerfordetail{
+  max-width: 1200px;
+}
 
+.forimg{
+  width: 50%;
+}
+
+.desc{
+  width: 50%;
+}
 
 
 
