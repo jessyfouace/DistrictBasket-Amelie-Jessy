@@ -15,3 +15,7 @@ We need to create a group basketball trade site with product listings and a deta
 ## Creators
 
 Amélie, Jessy
+
+## Trello
+
+https://trello.com/b/kKnNwukB/projet-basket-am%C3%A9lie-jessy

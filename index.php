@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
 <?php include('header.php') ?>
 
    <div class="row mw1200 col-12 p-0 mx-auto">
@@ -71,6 +72,15 @@
   <?php include('footer.php') ?>
 
 
+
+=======
+  <?php
+  include("header.php");
+  ?>
+
+  <?php
+  include("footer.php");
+  ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo6QtmkMRdAu6="
