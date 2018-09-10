@@ -17,28 +17,28 @@
 <body>
 <?php include('header.php') ?>
 
-  <div class="row col-12 p-0 m-0 mx-auto">
+   <div class="row mw1200 col-12 p-0 mx-auto">
+    
   <!-- First card -->
     <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
       <div class="card">
         <img class="card-img-top" src="img/basket1.jpg" alt="Shoe Picture">
         <ul class="list-group">
-          <li class="list-group-item">Nom</li>
-          <li class="list-group-item">Description</li>
-          <li class="list-group-item">Prix</li>
+          <li class="list-group-item">NEW BALANCE M1500.9 FT</li>
+          <li class="list-group-item">Reprise du design emblématique de la New Balance 1500.</li>
+          <li class="list-group-item">150€</li>
         </ul>
       </div>
     </div>
 
-
   <!-- Second card -->
-<div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
+  <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
       <div class="card">
         <img class="card-img-top" src="img/basket2.jpg" alt="Shoe Picture">
         <ul class="list-group">
-          <li class="list-group-item">Nom</li>
-          <li class="list-group-item">Description</li>
-          <li class="list-group-item">Prix</li>
+          <li class="list-group-item">NIKE W OUTBURST</li>
+          <li class="list-group-item">La Nike Outburst rééditée dans une nouvelle association de couleurs</li>
+          <li class="list-group-item">69€</li>
         </ul>
       </div>
     </div>
@@ -48,9 +48,9 @@
       <div class="card">
         <img class="card-img-top" src="img/basket3.jpg" alt="Shoe Picture">
         <ul class="list-group">
-          <li class="list-group-item">Nom</li>
-          <li class="list-group-item">Description</li>
-          <li class="list-group-item">Prix</li>
+          <li class="list-group-item">REEBOK RAPIDE MU </li>
+          <li class="list-group-item">Réinterprétation de la Reebok Rapide, ambiance 90's garantie !</li>
+          <li class="list-group-item">75€</li>
         </ul>
       </div>
     </div>
@@ -60,9 +60,9 @@
       <div class="card">
         <img class="card-img-top" src="img/basket4.jpg" alt="Shoe Picture">
         <ul class="list-group">
-          <li class="list-group-item">Nom</li>
-          <li class="list-group-item">Description</li>
-          <li class="list-group-item">Prix</li>
+          <li class="list-group-item">NIKE AIR MAX 1 PREMIUM</li>
+          <li class="list-group-item">Nouvelle édition prémium de la Air Max 1, cuir suédé de qualité et toile épaisse.</li>
+          <li class="list-group-item">100€</li>
         </ul>
       </div>
     </div>
