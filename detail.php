@@ -2,7 +2,7 @@
 <html class="no-js" lang="fr">
 
 <head>
-  <title></title>
+  <title> | DistricBasket</title>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,16 +17,48 @@
   <?php
   include("header.php");
   ?>
-  <div class="container containerfordetail">
+  <?php
+  $shoestable = array(
+    0 => array(
+    'srcimg' => "src='img/basket1.jpg'",
+    'nameshoes' => 'NEW BALANCE M1500.9 FT',
+    'descshoes' => 'Reprise du design emblématique de la New Balance 1500.',
+    'priceshoes' => '150€',
+    'disposhoes' => 'OUI'),
+
+    1 => array(
+    'srcimg' => "src='img/basket2.jpg'",
+    'nameshoes' => 'NIKE W OUTBURST',
+    'descshoes' => 'La Nike Outburst rééditée dans une nouvelle association de couleurs',
+    'priceshoes' => '69€',
+    'disposhoes' => 'NON'),
+
+    2 => array(
+    'srcimg' => "src='img/basket3.jpg'",
+    'nameshoes' => 'REEBOK RAPIDE MU',
+    'descshoes' => 'Réinterprétation de la Reebok Rapide, ambiance 90s garantie !',
+    'priceshoes' => '75€',
+    'disposhoes' => 'OUI'),
+
+    3 => array(
+    'srcimg' => "src='img/basket4.jpg'",
+    'nameshoes' => 'NIKE AIR MAX 1 PREMIUM',
+    'descshoes' => 'Nouvelle édition prémium de la Air Max 1, cuir suédé de qualité.',
+    'priceshoes' => '100€',
+    'disposhoes' => 'NON'),
+    );
+  ?>
+
+  <div class="container containerfordetail pt-5">
     <div class="row pt-5">
-      <div class="forimg mt-5">
-        <img alt="Image du produits détailler" <?php echo $_GET['product'][0] ?>>
+      <div class="forimg col-10 col-sm-6 col-md-6 col-lg-6 mx-auto">
+        <img class="sizeimg" alt="Image du produits détailler" <?php echo $shoestable[$_GET['product']]['srcimg']; ?>>
       </div>
-      <div class="desc">
-        <h1><?php echo $_GET['name']; ?></h1>
-        <p><?php echo $_GET['description']; ?></p>
-        <p><?php echo "Prix: " . $_GET['price']; ?></p>
-        <p><?php echo "Dispo: " . $_GET['dispo']; ?></p>
+      <div class="desc pl-3 col-10 col-sm-6 col-md-6 col-lg-6 mx-auto">
+        <h1><?php echo $shoestable[$_GET['product']]['nameshoes']; ?></h1>
+        <p><?php echo $shoestable[$_GET['product']]['descshoes'] ?></p>
+        <p><?php echo "Prix: " . $shoestable[$_GET['product']]['priceshoes']; ?></p>
+        <p><?php echo "Dispo: " . $shoestable[$_GET['product']]['disposhoes']; ?></p>
       </div>
     </div>
   </div>
