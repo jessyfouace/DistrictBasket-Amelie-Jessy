@@ -96,7 +96,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 9rem;
+  min-height: 100%;
+}
 /* *************************
 *****************************
 ****** HEADER + NAVBAR ******
@@ -130,10 +135,6 @@ textarea {
     width: 70%;
   }
 
-  .footer{
-    bottom: 0;
-  }
-
   @media screen and (min-width: 768px) {
     #navbarNavAltMarkup{
       display: none !important;
@@ -155,13 +156,6 @@ img[src="img/logobasket2.png"]{
   width: 70%;
 }
 
-.footer{
-  position: absolute;
-  bottom: 0;
-  margin-left: 0px;
-}
-
-
 @media screen and (min-width: 768px) {
   #navbarNavAltMarkup{
     display: none !important;
@@ -180,6 +174,15 @@ img[src="img/logobasket2.png"]{
 
 a:hover{
   text-decoration: none;
+}
+
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0%;
+  text-align: center;
 }
 
 /*******************
