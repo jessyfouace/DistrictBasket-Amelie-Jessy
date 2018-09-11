@@ -2,7 +2,7 @@
 <html class="no-js" lang="fr">
 
 <head>
-  <title></title>
+  <title>Accueil | DistricBasket</title>
   <meta charset="utf-6">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,69 +18,52 @@
 
 <?php include('header.php') ?>
 
-   <div class="row mw1200 col-12 p-0 mx-auto">
-    
-  <!-- First card -->
-    <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
-      <div class="card">
-        <img class="card-img-top" src="img/basket1.jpg" alt="Shoe Picture">
-        <ul class="list-group">
-          <li class="list-group-item">NEW BALANCE M1500.9 FT</li>
-          <li class="list-group-item">Reprise du design emblématique de la New Balance 1500.</li>
-          <li class="list-group-item">150€</li>
-        </ul>
-      </div>
-    </div>
+<?php
+$shoestable = array(
+  0 => array(
+  'srcimg' => "src='img/basket1.jpg'",
+  'nameshoes' => 'NEW BALANCE M1500.9 FT',
+  'descshoes' => 'Reprise du design emblématique de la New Balance 1500.',
+  'priceshoes' => '150€'),
 
-  <!-- Second card -->
-  <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
-      <div class="card">
-        <img class="card-img-top" src="img/basket2.jpg" alt="Shoe Picture">
-        <ul class="list-group">
-          <li class="list-group-item">NIKE W OUTBURST</li>
-          <li class="list-group-item">La Nike Outburst rééditée dans une nouvelle association de couleurs</li>
-          <li class="list-group-item">69€</li>
-        </ul>
-      </div>
-    </div>
+  1 => array(
+  'srcimg' => "src='img/basket2.jpg'",
+  'nameshoes' => 'NIKE W OUTBURST',
+  'descshoes' => 'La Nike Outburst rééditée dans une nouvelle association de couleurs',
+  'priceshoes' => '69€'),
 
-     <!-- Third card -->
-<div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
-      <div class="card">
-        <img class="card-img-top" src="img/basket3.jpg" alt="Shoe Picture">
-        <ul class="list-group">
-          <li class="list-group-item">REEBOK RAPIDE MU </li>
-          <li class="list-group-item">Réinterprétation de la Reebok Rapide, ambiance 90's garantie !</li>
-          <li class="list-group-item">75€</li>
-        </ul>
-      </div>
-    </div>
+  2 => array(
+  'srcimg' => "src='img/basket3.jpg'",
+  'nameshoes' => 'REEBOK RAPIDE MU',
+  'descshoes' => 'Réinterprétation de la Reebok Rapide, ambiance 90s garantie !',
+  'priceshoes' => '75€'),
 
-     <!-- Fourth card -->
-<div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto">
-      <div class="card">
-        <img class="card-img-top" src="img/basket4.jpg" alt="Shoe Picture">
-        <ul class="list-group">
-          <li class="list-group-item">NIKE AIR MAX 1 PREMIUM</li>
-          <li class="list-group-item">Nouvelle édition prémium de la Air Max 1, cuir suédé de qualité et toile épaisse.</li>
-          <li class="list-group-item">100€</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  3 => array(
+  'srcimg' => "src='img/basket4.jpg'",
+  'nameshoes' => 'NIKE AIR MAX 1 PREMIUM',
+  'descshoes' => 'Nouvelle édition prémium de la Air Max 1, cuir suédé de qualité.',
+  'priceshoes' => '100€'),
+  );
+
+  echo "<div class='row mw1200 col-12 mx-auto'>";
+  foreach ($shoestable as $key => $value) {
+    echo "<div class='col-10 col-sm-6 col-md-3 col-lg-3 mx-auto pb-3'>
+      <a href='detail.php?product=$key'>
+        <div class='card'>
+          <img class='card-img-top' alt='Shoe Picture' $value[srcimg]>
+          <ul class='list-group'>
+              <li class='list-group-item'>$value[nameshoes]</li>
+            <li class='list-group-item'>$value[descshoes]</li>
+            <li class='list-group-item'>$value[priceshoes]</li>
+          </ul>
+        </div>
+      </a>
+    </div>";
+  }
+  echo "</div>";
+?>
 
   <?php include('footer.php') ?>
-
-
-
-=======
-  <?php
-  include("header.php");
-  ?>
-
-  <?php
-  include("footer.php");
-  ?>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo6QtmkMRdAu6="
