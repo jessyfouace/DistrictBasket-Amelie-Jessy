@@ -210,6 +210,15 @@ a:hover{
   padding: 5px;
 }
 
+.listforcolor li{
+  display: inline-block;
+  border: 1px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
 
 
 
